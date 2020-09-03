@@ -1,0 +1,19 @@
+{
+    "name": "skeleton",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "skeleton": "node bin/skeleton.js -c ./skeleton.config.json",
+        "postinstall": "patch-package"
+    },
+    "devDependencies": {
+        "base64-img": "^1.0.4",
+        "commander": "^6.1.0",
+        "html-minifier": "^4.0.0",
+        "images": "^3.2.3",
+        "patch-package": "^6.2.2",
+        "puppeteer": "^5.2.1",
+        "xutil": "^1.0.11"
+    }
+}

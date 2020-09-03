@@ -1,0 +1,9 @@
+{
+    "pageName": "medbanks",
+    "pageUrl": "https://m.spcare.cn/?time=1596012209549&userId=1273143856605421568&phone=15018449382&nickName=15018449382&openid=o9mwVwyX2myz-kdortYtxRzFYECk",
+    "device": "iPhone X",
+    "debug": true,
+    "debugTime": 3000,
+    "delayTimeToClose": 3000,
+    "traverseExcludes": [".search_wrap"]
+}

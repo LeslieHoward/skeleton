@@ -58,9 +58,9 @@ const insertSkeleton = (skeletonImageBase64, options) => {
       background-position: center 0 !important;
     "></div>
     <script class="${skeletonClass}">
-      // Define hooks
+      // 定义全局调用的钩子
       window.SKELETON = {
-        destroy: function () { // Manually destroy the skeleton
+        destroy: function () { // 手动销毁骨架屏
           var removes = Array.from(document.body.querySelectorAll('.${skeletonClass}'));
           removes && removes.map(function(item){
             document.body.removeChild(item);
@@ -69,7 +69,7 @@ const insertSkeleton = (skeletonImageBase64, options) => {
         }
       };
 
-      // destroy after the onload event by default
+      // 在页面文件加载完毕之后，销毁骨架屏
       window.addEventListener('load', function(){
         setTimeout(function(){
           window.SKELETON && SKELETON.destroy()

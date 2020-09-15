@@ -72,8 +72,8 @@
       }
   }
 
-  window.AwesomeSkeleton = {
-      // Entry function
+  window.Skeleton = {
+      // 入口函数
       async genSkeleton(options) {
           this.options = options;
           if (options.debug) {
@@ -100,7 +100,6 @@
           });
           document.body.prepend(switchElement);
 
-          // Need to wait for event processing, so use Promise for packaging
           return new Promise((resolve, reject) => {
               try {
                   switchElement.onclick = async () => {

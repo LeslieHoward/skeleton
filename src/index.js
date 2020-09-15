@@ -28,7 +28,7 @@ const getSkeleton = async function(options) {
 
   // 把目标页面处理为骨架屏页面
   await page.evaluate(async options => {
-    await window.AwesomeSkeleton.genSkeleton(options);
+    await window.Skeleton.genSkeleton(options);
   }, options);
 
   // 把骨架屏保存为一张base64格式的图片
